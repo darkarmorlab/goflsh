@@ -1,8 +1,3 @@
-## 前言
-在实战中经常会遇到配置文件中配置了很多不知道怎么利用的基于sass的或者私有化部署应用的key，从刚开始的微信公众号通过开发者模式的简单利用，到前段时间企业微信的未授权漏洞爆出，各种利用工具被写出，于是可以思考如何针对办公应用软件去实现我们的后利用。
-
-## 构想
-每次遇到不同的key的时候要去学习如何使用，要证明会有怎样的危害，便有想法去研究和写一个简单的工具，集合主流的办公应用去针对凭证泄露的场景做利用，配合自己平时的攻防经验以及官方的api文档去设计攻击实现的方式和流程并且嵌入到工具中，所以应运而出这个工具goflsh。里面集合了三大主流应用办公软件，钉钉、飞书、微信。
 ## 功能总体实现图
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/22598157/1698390795279-3054049c-a079-41e8-a9bb-466a45b65e21.png#averageHue=%23f6f6f5&clientId=u3470c4f2-dbf4-4&from=paste&height=531&id=u6d749c11&originHeight=531&originWidth=841&originalType=binary&ratio=1&rotation=0&showTitle=false&size=33188&status=done&style=none&taskId=u13da2063-7a6c-45f3-af3d-49cf896d7c4&title=&width=841)
 
@@ -150,7 +145,4 @@ Access Token: xxxx
 通过file key和user id去发送给指定人员
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/22598157/1698215891623-d4419008-7944-444c-b71c-44311cb73432.png#averageHue=%231c1c1c&clientId=ue8d7f862-c068-4&from=paste&height=67&id=u4b66feea&originHeight=67&originWidth=606&originalType=binary&ratio=1&rotation=0&showTitle=false&size=3446&status=done&style=none&taskId=u0966e54d-e61c-4e02-b254-3c31115d1d6&title=&width=606)
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/22598157/1698215932535-81cf8896-d840-47d5-9834-2de8e8f17932.png#averageHue=%23fefbef&clientId=ue8d7f862-c068-4&from=paste&height=229&id=ub3568732&originHeight=229&originWidth=442&originalType=binary&ratio=1&rotation=0&showTitle=false&size=8219&status=done&style=none&taskId=ua4f39330-5052-4f3b-b163-bfd21756fb6&title=&width=442)
-### 总结
-针对ak泄露其实各个厂商多多少少都做了很多防护，初始申请应用需要白名单ip申请、权限分权特别细、生成token存在不同类型等。但通常使用的人同样也是最大的漏洞，权限申请过大，为了便利开通所有ip等，所以说要在平时就做好安全意识的培养以及安全建设的规范化。
-### 程序下载地址
-xxxxxx
+
